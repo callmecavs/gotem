@@ -1,20 +1,20 @@
 {
-  "name":        "gotem.js",
-  "description": "",
+  "name":        "gotem",
+  "description": "Copy to clipboard for modern browsers in less than 1kb.",
 
   "main":        "dist/gotem.js",
   "module":      "dist/gotem.module.js",
   "jsnext:main": "dist/gotem.module.js",
 
   "version": "0.0.1",
-  "license": "",
+  "license": "MIT",
 
-  "repository": "",
+  "repository": "callmecavs/gotem",
 
   "author": {
-    "name":  "",
-    "email": "",
-    "url":   ""
+    "name":  "Michael Cavalea",
+    "email": "callmecavs@gmail.com",
+    "url":   "http://callmecavs.com/"
   },
 
   "scripts": {
@@ -27,7 +27,9 @@
   },
 
   "keywords": [
-
+    "browser",
+    "clipboard",
+    "copy"
   ],
 
   "devDependencies": {
