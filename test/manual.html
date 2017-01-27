@@ -7,10 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <div id="target">This should be copied to the clipboard.</div>
+    <a id="trigger">Copy</a>
+
     <script src="../dist/gotem.js"></script>
     <script>
       console.log('Module assigned to window.Gotem. Logged below:')
       console.log(Gotem)
+
+      var target = document.getElementById('target')
+      var trigger = document.getElementById('trigger')
+
+      Gotem({
+        target: target,
+        trigger: trigger,
+        success: function () { console.log('success') },
+        error: function () { console.log('error') }
+      })
     </script>
   </body>
 </html>
