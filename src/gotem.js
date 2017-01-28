@@ -1,19 +1,19 @@
-const gotem = (options = {}) => {
-  // throw if no target or no trigger
-  if (!options.target || !options.trigger) {
-    throw new Error('gotem: target and trigger parameters are required.')
+const gotem = (trigger, target, cbs = {}) => {
+  // throw if no target node or no trigger node
+  if (target.nodeType !== Node.ELEMENT_NODE || target.nodeType !== Node.ELEMENT_NODE) {
+    throw new Error('gotem: trigger and target nodes are required.')
   }
 
   const handle = event => {
     // prevent default link behavior
     // note that tagName returns in uppercase
-    if (event.target.tagName === 'A') {
+    if (trigger.tagName === 'A') {
       event.preventDefault()
     }
 
     // create range, and select target node contents
     const range = document.createRange()
-    range.selectNodeContents(options.target)
+    range.selectNodeContents(target)
 
     // remove existing selections, then add the new one
     const selection = window.getSelection()
@@ -26,14 +26,14 @@ const gotem = (options = {}) => {
     // based on if the command executed
     // check if the appropriate callback exists, and if it does, call it
     if (executed) {
-      options.success && options.success()
+      cbs.success && cbs.success()
     } else {
-      options.error && options.error()
+      cbs.error && cbs.error()
     }
   }
 
   // bind the click handler to the trigger node
-  options.trigger.addEventListener('click', handle)
+  trigger.addEventListener('click', handle)
 }
 
 export default gotem
