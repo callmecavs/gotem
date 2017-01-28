@@ -1,6 +1,6 @@
 const gotem = (trigger, target, cbs = {}) => {
   // throw if no target node or no trigger node
-  if (target.nodeType !== Node.ELEMENT_NODE || target.nodeType !== Node.ELEMENT_NODE) {
+  if (target.nodeType !== window.Node.ELEMENT_NODE || target.nodeType !== window.Node.ELEMENT_NODE) {
     throw new Error('gotem: trigger and target nodes are required.')
   }
 
