@@ -44,6 +44,18 @@ gotem(nodes.trigger, nodes.target, {
 })
 ```
 
+## Browser Support
+
+gotem requires [`execCommand`](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) cut/copy support.
+
+As such, it works in the following:
+
+* Chrome 43+
+* Firefox 41+
+* Safari 10+
+* Edge 12+
+* IE 9+
+
 ## License
 
 [MIT](https://opensource.org/licenses/MIT). © 2017 Michael Cavalea
