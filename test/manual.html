@@ -18,9 +18,7 @@
       var target = document.getElementById('target')
       var trigger = document.getElementById('trigger')
 
-      Gotem({
-        target: target,
-        trigger: trigger,
+      Gotem(trigger, target, {
         success: function () { console.log('success') },
         error: function () { console.log('error') }
       })
