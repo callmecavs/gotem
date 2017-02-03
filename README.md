@@ -27,7 +27,7 @@ import gotem from 'gotem'
 const nodes = {
   trigger: document.getElementById('trigger'),
   target: document.getElementById('target')
-};
+}
 
 // when the trigger is clicked,
 // the text of the target will be copied to the clipboard
