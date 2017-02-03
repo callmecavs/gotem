@@ -24,13 +24,10 @@ Examples follow:
 import gotem from 'gotem'
 
 // a trigger and target node are required
-const nodes = [
-  'trigger',
-  'target'
-].reduce((obj, selector) => {
-  obj[selector] = document.getElementById(selector)
-  return obj
-}, {})
+const nodes = {
+  trigger: document.getElementById('trigger'),
+  target: document.getElementById('target')
+};
 
 // when the trigger is clicked,
 // the text of the target will be copied to the clipboard
