@@ -1,6 +1,6 @@
 # gotem
 
-[![gotem on NPM](https://img.shields.io/npm/v/gotem.svg?style=flat-square)](https://www.npmjs.com/package/gotem) [![Standard JavaScript Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
+[![gotem on NPM](https://img.shields.io/npm/v/gotem.svg?style=flat-square)](https://www.npmjs.com/package/gotem) [![CDNJS](https://img.shields.io/cdnjs/v/gotem.svg?style=flat-square)](https://cdnjs.com/libraries/gotem) [![Standard JavaScript Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
 
 Copy to clipboard for modern browsers in less than 1kb.
 
